@@ -1,0 +1,22 @@
+#logging:
+#  pattern:
+#    console: "%d - %msg%n"
+#    level: debug
+#  file: /Users/JIANLIN_XU/Desktop/毕业设计文档/sell/src/main/resources/sell.log
+spring:
+  devtools:
+    restart:
+      enabled: true
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: xjl6593632
+    url: jdbc:mysql://47.98.168.242/sell?characterEncoding=utf-8&useSSL=false
+  jpa:
+    show-sql: true
+  jackson:
+    default-property-inclusion: non_null
+
+server:
+  servlet:
+    context-path: /sell
